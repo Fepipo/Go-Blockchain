@@ -10,7 +10,7 @@ import (
 )
 
 func Miner(block models.Block, dificuldade int) (int, string, time.Duration) {
-	
+
 	var hash [32]byte
 	var string_hash string
 	var duration time.Duration
