@@ -17,7 +17,7 @@ func Miner(block models.Block, dificuldade int) (int, string, time.Duration) {
 
   info_block := strconv.Itoa(block.Index) + block.Timestamp + block.Data + block.PreviousHash
 
-  quant_zeros	:= strings.Repeat("0", dificuldade)
+  quant_zeros := strings.Repeat("0", dificuldade)
 	
   loop := true
   nonce := 0
@@ -32,7 +32,7 @@ func Miner(block models.Block, dificuldade int) (int, string, time.Duration) {
     if strings.HasPrefix(string_hash, quant_zeros) {
       duration = time.Since(start)
       break
-  	} else {
+    } else {
       nonce += 1
     }
   }
