@@ -3,10 +3,10 @@ package miner
 import (
   "blockchain/models"
   "crypto/sha256"
-	"encoding/hex"
-	"strconv"
-	"strings"
-	"time"
+  "encoding/hex"
+  "strconv"
+  "strings"
+  "time"
 )
 
 func Miner(block models.Block, dificuldade int) (int, string, time.Duration) {
