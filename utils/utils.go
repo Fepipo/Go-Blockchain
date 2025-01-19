@@ -1,9 +1,9 @@
 package utils
 
 import (
-	"fmt"
+  "fmt"
   "time"
-	"blockchain/models"
+  "blockchain/models"
 )
 
 func Time() string {
