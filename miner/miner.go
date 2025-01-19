@@ -33,9 +33,9 @@ func Miner(block models.Block, dificuldade int) (int, string, time.Duration) {
       duration = time.Since(start)
       break
   	} else {
-			nonce += 1
-		}
-	}
+      nonce += 1
+    }
+  }
 
-	return nonce, string_hash, duration
+  return nonce, string_hash, duration
 }
