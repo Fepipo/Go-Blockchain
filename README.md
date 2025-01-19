@@ -12,11 +12,11 @@
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/Fepipo/go-blockchain.git
+   git clone https://github.com/Fepipo/Go-Blockchain.git
    ```
 2. Navigate to the folder where the `main.go` file is located:
    ```bash
-   cd go-blockchain
+   cd Go-Blockchain
    ```
 3. Run the project with the command below, passing as arguments the number of blocks to create and the difficulty (number of 0s at the beginning of the hash):
    ```bash
