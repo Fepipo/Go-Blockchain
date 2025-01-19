@@ -21,20 +21,20 @@ func Miner(block models.Block, dificuldade int) (int, string, time.Duration) {
 	
   loop := true
   nonce := 0
-	start := time.Now()
+  start := time.Now()
 
-	for loop {
-		info_block = info_block + strconv.Itoa(nonce)
-		hash = sha256.Sum256([]byte(info_block))
+  for loop {
+    info_block = info_block + strconv.Itoa(nonce)
+    hash = sha256.Sum256([]byte(info_block))
 
-		string_hash = hex.EncodeToString(hash[:])
+    string_hash = hex.EncodeToString(hash[:])
 		
-		if strings.HasPrefix(string_hash, quant_zeros) {
-			duration = time.Since(start)
-			break
-			} else {
-				nonce += 1
-			}
+    if strings.HasPrefix(string_hash, quant_zeros) {
+      duration = time.Since(start)
+      break
+  	} else {
+			nonce += 1
+		}
 	}
 
 	return nonce, string_hash, duration
