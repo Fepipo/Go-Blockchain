@@ -2,7 +2,7 @@ package miner
 
 import (
 	"blockchain/models"
-	"crypto/sha256"
+  "crypto/sha256"
 	"encoding/hex"
 	"strconv"
 	"strings"
