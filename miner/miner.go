@@ -11,16 +11,16 @@ import (
 
 func Miner(block models.Block, dificuldade int) (int, string, time.Duration) {
 
-	var hash [32]byte
-	var string_hash string
-	var duration time.Duration
+  var hash [32]byte
+  var string_hash string
+  var duration time.Duration
 
-	info_block := strconv.Itoa(block.Index) + block.Timestamp + block.Data + block.PreviousHash
+  info_block := strconv.Itoa(block.Index) + block.Timestamp + block.Data + block.PreviousHash
 
-	quant_zeros	:= strings.Repeat("0", dificuldade)
+  quant_zeros	:= strings.Repeat("0", dificuldade)
 	
-	loop := true
-	nonce := 0
+  loop := true
+  nonce := 0
 	start := time.Now()
 
 	for loop {
