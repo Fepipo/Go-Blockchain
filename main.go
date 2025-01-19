@@ -1,12 +1,12 @@
 package main
 
 import (
-	"blockchain/miner"
-	"blockchain/models"
-	"blockchain/utils"
-	"fmt"
-	"os"
-	"strconv"
+  "blockchain/miner"
+  "blockchain/models"
+  "blockchain/utils"
+  "fmt"
+  "os"
+  "strconv"
 )
 
 func main() {
